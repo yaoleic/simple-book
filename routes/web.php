@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 Route::get('/', "\App\Http\Controllers\LoginController@index");
 
 Route::group(['middleware' => 'auth:web'], function(){
@@ -51,3 +53,27 @@ Route::get('/register', "\App\Http\Controllers\RegisterController@index");
 Route::post('/register', "\App\Http\Controllers\RegisterController@register");
 
 include_once("admin.php");
+
+
+
+
+//App::make('router')->get('/', function () {
+//    return view('welcome');
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,6 +11,7 @@
 |
 */
 
+//实例化一个应用 将跟路径传入进去
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );

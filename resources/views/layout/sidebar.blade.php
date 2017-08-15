@@ -16,11 +16,14 @@
 
         </div>
     </aside>
+
+
+
     <aside id="widget-categories" class="widget panel panel-default">
         <div class="panel-heading">
             专题
         </div>
-
+        <div class="panel-body">
         <ul class="category-root list-group">
             @foreach($topics as $topic)
                 <li class="list-group-item">
@@ -29,7 +32,7 @@
                 </li>
             @endforeach
         </ul>
-
+        </div>
     </aside>
 </div>
 </div>

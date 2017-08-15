@@ -3,6 +3,7 @@
  */
 
 body {
+    background: #F8FAFC;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
 }
@@ -34,11 +35,25 @@ h6, .h6 {
 /*
  * Masthead for nav
  */
+.banner{
+    text-align: center;
+    padding: 84px 0;
+    background: #ffffff;
+    background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);
+}
 
 .blog-masthead {
-    background-color: #428bca;
-    -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-    box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 2px solid #e1e1e1;
+
+    /*background-color: #428bca;*/
+    /*-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);*/
+    /*box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);*/
+}
+.blog-masthead .container{
+
 }
 
 /* Nav links */
@@ -47,12 +62,15 @@ h6, .h6 {
     display: inline-block;
     padding: 10px;
     font-weight: 500;
-    color: #cdddeb;
+    color: black;
+    font-family: "微软雅黑";
+
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-    color: #fff;
+    color: #e67e22;
     text-decoration: none;
+
 }
 
 /* Active state gets a caret at the bottom */
@@ -79,8 +97,8 @@ h6, .h6 {
  */
 
 .blog-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+
 }
 .blog-title {
     margin-top: 30px;
@@ -101,6 +119,9 @@ h6, .h6 {
 .blog-main {
     font-size: 18px;
     line-height: 1.5;
+    background: white;
+
+    box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
 }
 
 /* Sidebar modules for boxing content */
@@ -118,7 +139,22 @@ h6, .h6 {
 .sidebar-module-inset ol:last-child {
     margin-bottom: 0;
 }
+.panel-heading{
+    background: none !important;
 
+    box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
+}
+.list-group-item{
+   margin-bottom: 5px;
+    background: white;
+    transition: background 1s;
+    -moz-transition: background 1s;	/* Firefox 4 */
+    -webkit-transition: background 1s;	/* Safari 和 Chrome */
+    -o-transition: background 1s;	/* Opera */
+}
+.list-group-item:hover{
+    
+}
 
 /* Pagination */
 .pager {
@@ -138,14 +174,19 @@ h6, .h6 {
  */
 
 .blog-post {
-    margin-bottom: 60px;
+    padding: 20px 20px 10px 20px;
+
 }
+
 .blog-post-title {
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: 16px;
+}
+
+.blog-post-title a{
+    color: black;
 }
 .blog-post-meta {
-    margin-bottom: 20px;
     color: #999;
 }
 

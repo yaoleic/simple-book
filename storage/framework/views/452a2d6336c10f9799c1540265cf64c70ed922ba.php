@@ -16,11 +16,14 @@
 
         </div>
     </aside>
+
+
+
     <aside id="widget-categories" class="widget panel panel-default">
         <div class="panel-heading">
             专题
         </div>
-
+        <div class="panel-body">
         <ul class="category-root list-group">
             <?php $__currentLoopData = $topics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $topic): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <li class="list-group-item">
@@ -30,7 +33,7 @@
                 </li>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </ul>
-
+        </div>
     </aside>
 </div>
 </div>

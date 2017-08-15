@@ -27,6 +27,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+
+
+
+    public function getaaa(){
+        return 'aaa';
+    }
+
     public function posts()
     {
         return $this->hasMany(\App\Post::class, 'user_id', 'id');
@@ -87,4 +94,15 @@ class User extends Authenticatable
         }
         return $value;
     }
+
+
+    public function gravater($size = '100')
+    {
+        $hash = md5(strtolower(trim($this->attributes['email'])));
+        return "http://www.gravatar.com/avatar/$hash?s=$size";
+    }
+
+
+
+
 }

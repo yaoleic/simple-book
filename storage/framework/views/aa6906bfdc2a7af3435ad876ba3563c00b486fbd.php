@@ -46,7 +46,7 @@
     </div><!-- /.row -->
 </div><!-- /.container -->
 
-<?php echo $__env->make("layout.footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
 
 <?php echo $__env->yieldContent("pagejs"); ?>
 <!-- Bootstrap core JavaScript
