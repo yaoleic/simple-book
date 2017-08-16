@@ -1,10 +1,10 @@
 <?php $__env->startSection("content"); ?>
 
 
-    <div class="col-sm-8 blog-main">
-        <div class="blog-post">
-            <div style="display:inline-flex">
-                    <h2 class="blog-post-title"><?php echo e($post->title); ?></h2>
+    <div class="col-sm-12 blog-main">
+        <div class="blog-post blog-show">
+            <div style="">
+                    <h3 class="blog-post-title"><?php echo e($post->title); ?></h3>
                     <?php if(Auth::user()->can('update', $post)): ?>
                     <a style="margin: auto"  href="/posts/<?php echo e($post->id); ?>/edit">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
@@ -19,8 +19,18 @@
 
             <p class="blog-post-meta"><?php echo e($post->created_at->toFormattedDateString()); ?> by <a href="#"><?php echo e($post->user->name); ?></a></p>
 
-            <p><?php echo $post->content; ?></p>
-            <div>
+
+            <div class="blog-post-content">
+               <?php echo $post->content; ?>
+
+
+            </div>
+
+
+
+
+
+            <div class="blog-zan">
                 <?php if($post->zan(\Auth::id())->exists()): ?>
                     <a href="/posts/<?php echo e($post->id); ?>/unzan" type="button" class="btn btn-default btn-lg">取消赞</a>
                 <?php else: ?>
@@ -30,7 +40,7 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
+        <div class="panel panel-default post-comments">
             <!-- Default panel contents -->
             <div class="panel-heading">评论</div>
 

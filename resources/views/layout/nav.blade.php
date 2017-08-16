@@ -8,10 +8,13 @@
 <div class="blog-masthead">
     <div class="container">
 
+        <h3 style="">书感</h3>
+
         <form action="/posts/search" method="GET">
 
 
         <ul class="nav blog-nav  navbar-nav navbar-left">
+
             <li>
                 <a class="blog-nav-item " href="/posts">首页</a>
             </li>

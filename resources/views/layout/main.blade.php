@@ -42,11 +42,10 @@
     <div class="row">
     @yield("content")
 
-        @include("layout.sidebar")
     </div><!-- /.row -->
 </div><!-- /.container -->
 
-{{--@include("layout.footer")--}}
+@include("layout.footer")
 
 @yield("pagejs")
 <!-- Bootstrap core JavaScript
